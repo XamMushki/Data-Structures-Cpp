@@ -10,7 +10,7 @@ void showQueue()
 {
     int h = head;
     h++;
-    cout<<"Queue: ";
+    cout << "Queue: ";
     while (h <= tail)
     {
         cout << queue[h] << " ";
@@ -50,5 +50,6 @@ int main()
     dequeue();
     enqueue(13);
     dequeue();
+
     return (0);
 }
