@@ -59,23 +59,23 @@ void show()
             cout << ", ";
         }
     }
-    cout << "}\n" << endl;
+    cout << "}\n"
+         << endl;
 }
 
 int main()
 {
-    insert(1);  //INDEX 0
-    insert(2);  //INDEX 1
-    insert(3);  //INDEX 2
-    insert(7);  //INDEX 3
-    insert(6);  //INDEX 4
+    insert(1); // INDEX 0
+    insert(2); // INDEX 1
+    insert(3); // INDEX 2
+    insert(7); // INDEX 3
+    insert(6); // INDEX 4
     updateAt(1, 4);
-    deleteAt(2);    //INDEX 4 ELEMENT REMOVED
-    insert(5);      //INDEX 4 ADDED
+    deleteAt(2); // INDEX 4 ELEMENT REMOVED
+    insert(5);   // INDEX 4 ADDED
 
-    updateAt(5,3);
+    updateAt(5, 3);
     deleteAt(6);
-
 
     return (0);
 }
