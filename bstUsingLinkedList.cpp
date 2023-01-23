@@ -129,13 +129,12 @@ public:
     }
     void deleteItem(int item)
     {
-        // delete the item.
+        // delete the item in tree.
     }
     void search(int item)
     {
         // search the item.
     }
-    //test
 };
 
 int main()
