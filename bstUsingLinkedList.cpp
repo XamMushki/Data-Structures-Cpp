@@ -127,6 +127,14 @@ public:
         printPostorder(root);
         cout << endl;
     }
+    void deleteItem(int item)
+    {
+        // delete the item.
+    }
+    void search(int item)
+    {
+        // search the item.
+    }
 };
 
 int main()
