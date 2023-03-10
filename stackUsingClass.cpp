@@ -5,22 +5,10 @@ using namespace std;
 
 class Stack {
    private:
-    int stack_size, top;
-    int *stack;
-    // Array name itself is a pointer, so we will treat this pointer as an array...
-    // or
-    // int *stack = new int[stack_size];  // This will allocate the memory dynamically
-    /*  However, this 'raw' usage of 'new' is not
-    recommended as you must use delete to recover
-    the allocated memory.
-
-    delete[] array;
-    Better use vector<>
-    */
+    int stack_size=5, top;
+    int stack[5];
    public:
     Stack() {
-        cout << "Enter Stack Size: ";
-        cin >> stack_size;
         top = stack_size - 1;  // used to keep track of the top of the stack
     }
     void push(int data) {
