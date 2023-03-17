@@ -2,13 +2,16 @@
 using namespace std;
 
 // Stack using Array and Class
+const int MAX_SIZE = 5;
 
 class Stack {
    private:
-    int stack_size=5, top;
-    int stack[5];
+    int stack_size, top;
+    int stack[MAX_SIZE];
+
    public:
     Stack() {
+        stack_size = MAX_SIZE;
         top = stack_size - 1;  // used to keep track of the top of the stack
     }
     void push(int data) {
